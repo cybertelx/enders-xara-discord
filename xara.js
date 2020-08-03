@@ -3,7 +3,7 @@ const path = require('path');
 
 const client = new CommandoClient({
 	commandPrefix: 'x!',
-	owner: [406435436810993674,293826314807410690],
+	owner: ["406435436810993674","293826314807410690"],
 	invite: 'https://discord.gg/VVYfEat',
 });
 
@@ -15,7 +15,11 @@ client.registry
 	['memes', 'Memes'],
 ])
 .registerDefaultGroups()
-.registerDefaultCommands()
+.registerDefaultCommands({
+  ping: false,
+  unknownCommand: true,
+  commandState: true
+})
 .registerCommandsIn(path.join(__dirname, 'commands'));
 
 client.once('ready', () => {
@@ -27,4 +31,4 @@ client.once('ready', () => {
 
 client.on('error', console.error);
 
-client.login("NzM1NTgyMzQ3MTI2MjQzNDI4.XxiWcg.Rq5XEjX5T_QKGT3v0fBD6Op1U-s");
+client.login(process.env.TOKEN);
