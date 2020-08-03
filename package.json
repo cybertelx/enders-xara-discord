@@ -1,0 +1,23 @@
+{
+  "name": "xara-bot",
+  "version": "1.0.0",
+  "description": "A Discord bot in Luvit for the MC Enders group on TotalFreedom.",
+  "main": "xara.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cybertelx/enders-xara-discord.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cybertelx/enders-xara-discord/issues"
+  },
+  "homepage": "https://github.com/cybertelx/enders-xara-discord#readme",
+  "dependencies": {
+    "discord.js": "^12.2.0",
+    "discord.js-commando": "github:discordjs/commando"
+  }
+}
